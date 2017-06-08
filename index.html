@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("b").after("<i>这是github的logo<br></i>");
+  });
+
+  $("#btn2").click(function(){
+    $("i").remove();
+  });
+});
+</script>
+	
+</head>
+<body>
+
+<p>之后插入请点击插入按钮，删除全部请点击清除按钮。</p>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496555953046&di=d3c93fe298bd11b41c32df0695f568ff&imgtype=0&src=http%3A%2F%2Fimg2.niushe.com%2Fupload%2F201304%2F19%2F14-22-31-71-26144.jpg">
+<br>
+<b>这是章鱼，可不是猫咪哦！<br></b>
+
+<button id="btn1">插入按钮</button>
+<button id="btn2">清除按钮</button>
+
+</body>
+</html>
